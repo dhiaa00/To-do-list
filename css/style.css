@@ -28,7 +28,7 @@ ul {
   margin-top: 50px;
   border: 2px solid #c2b2dc;
   border-radius: 20px;
-  background-color: var(--primary);
+  background: linear-gradient(135deg, #153677, #4e085f);
   display: flex;
   flex-direction: column;
   justify-content: center;
