@@ -39,7 +39,6 @@ function checkclick() {
   let check = document.querySelectorAll(`input[type="checkbox"]`);
   let btn = document.querySelectorAll("button");
   check.forEach((e) => {
-    console.log(e);
     e.onclick = function () {
       if (!this.parentElement.classList.contains("checked")) {
         this.parentElement.style.cssText = "text-decoration: line-through";
@@ -100,3 +99,11 @@ add.onclick = function create() {
     checkclick();
   }
 };
+
+// when clicking enter on the keyboard
+
+$("input[type='text']").keyup(function (event) {
+  if (event.keyCode === 13) {
+    add.click();
+  }
+});
